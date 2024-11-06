@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FIND YOUR PAIR</title>
+</head>
+<body>
+    <div class="background"></div> <!-- Background layer with blur -->
+    <div class="container">
+        <h1>FIND YOUR PAIR</h1>
+        <label for="gender">Select Your Gender:</label>
+        <select id="gender" onchange="updateNameList()">
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <div id="nameSelection" style="display:none;">
+            <label for="name">Select Your Name:</label>
+            <select id="name"></select>
+            <button onclick="matchName()">Find Your Pair</button>
+        </div>
+
+        <h2 id="result"></h2>
+    </div>
+  <script src="script.js"></script>
+    
+</body>
+</html>
